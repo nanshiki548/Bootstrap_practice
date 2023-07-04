@@ -15,58 +15,58 @@
     <!-- *** ここから始めてください *** -->
 
     <form>
-        <div>
+        <div class="form-group">
             <label for="name">名前</label>
-            <input type="text" id="name" placeholder="名前を入力">
+            <input class="form-control" type="text" id="name" placeholder="名前を入力">
         </div>
-        <div>
+        <div class="form-group">
             <label for="email">メールアドレス</label>
-            <input type="email" id="email" placeholder="メールアドレスを入力">
+            <input class="form-control form-control-lg" type="email" id="email" placeholder="メールアドレスを入力">
         </div>
-        <div>
+        <div class="form-group">
             <label for="company">会社名</label>
-            <input type="text" id="company" placeholder="会社名を入力">
+            <input class="form-control form-control-sm" type="text" id="company" placeholder="会社名を入力">
         </div>
         <div>
             <label for="password">パスワード</label>
-            <input type="password" id="password" placeholder="パスワードを入力">
-            <small>8文字以上が必要です。</small>
+            <input class="form-control" type="password" id="password" readonly placeholder="パスワードを入力">
+            <small class="form-text text-muted">8文字以上が必要です。</small>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="gender">性別</label>
-            <select id="gender">
+            <select class="form-control" id="gender">
                 <option>男</option>
                 <option>女</option>
             </select>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="message">メッセージ</label>
-            <textarea id="message" rows="3"></textarea>
+            <textarea class="form-control" id="message" rows="3"></textarea>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="file">ファイル選択</label>
-            <input type="file" id="file">
+            <input class="form-control-file btn btn-outline-dark" type="file" id="file">
             <small>最大3MB</small>
         </div>
 
-        <div>
-            <input type="file" id="myfile">
-            <label for="myfile">ファイルを選択してください。</label>
+        <div class="custom-file">
+            <input class="custom-file-input" type="file" id="myfile">
+            <label class="custom-file-label" for="myfile">ファイルを選択してください。</label>
         </div>
         <br>
         <br>
 
-        <div>
+        <div class="form-group">
             <label for="membership">会員レベル</label>
-            <input type="range" id="membership">
+            <input class="custom-range" type="range" id="membership">
         </div>
 
         <br>
 
-        <button type="submit">送信する</button>
+        <button class="btn btn-primary btn-block" type="submit">送信する</button>
     </form>
 
     <!-- *** ここから上になります。 *** -->

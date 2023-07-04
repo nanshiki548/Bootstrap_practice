@@ -14,32 +14,32 @@
 <div class="container" style="margin-top:50px;">
     <!-- *** ここから始めてください *** -->
 
-    <div>
-        <button type="button">左</button>
-        <button type="button">中央</button>
-        <button type="button">右</button>
+    <div class="btn-group">
+        <button class="btn btn-primary" type="button">左</button>
+        <button class="btn btn-secondary" type="button">中央</button>
+        <button class="btn btn-primary" type="button">右</button>
     </div>
 
     <br>
     <br>
 
-    <div>
-        <button type="button">上</button>
-        <button type="button">中央</button>
-        <button type="button">下</button>
+    <div class="btn-group-vertical">
+        <button class="btn btn-success" type="button">上</button>
+        <button class="btn btn-primary" type="button">中央</button>
+        <button class="btn btn-danger" type="button">下</button>
     </div>
 
     <br>
     <br>
 
-    <div>
-        <button type="button">
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
             ドロップダウン
         </button>
-        <div>
-            <a href="#">リンク１</a>
-            <a href="#">リンク２</a>
-            <a href="#">リンク３</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">リンク１</a>
+            <a class="dropdown-item" href="#">リンク２</a>
+            <a class="dropdown-item" href="#">リンク３</a>
         </div>
     </div>
 
@@ -47,13 +47,14 @@
     <br>
 
     <div>
-        <button type="button">通常のボタン</button>
-        <button type="button">グループの中のドロップダウン</button>
-        <div>
-            <a href="#">リンク１</a>
-            <a href="#">リンク２</a>
-            <a href="#">リンク３</a>
-            <a href="#">リンク４</a>
+        <button class="btn btn-primary" type="button">通常のボタン</button>
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">グループの中のドロップダウン</button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">リンク１</a>
+            <a class="dropdown-item" href="#">リンク２</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">リンク３</a>
+            <a class="dropdown-item" href="#">リンク４</a>
         </div>
     </div>
 
